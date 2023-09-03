@@ -5,7 +5,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 
 from sklearn.tree import DecisionTreeRegressor
-from xgboost import XGBRegressor
 
 
 from sklearn.metrics import mean_absolute_error
