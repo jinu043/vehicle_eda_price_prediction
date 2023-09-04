@@ -45,7 +45,7 @@ def top_makes_dist(df, n):
 col1, col2 = st.columns(2)
 with col1:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-    🚘Which makes have most number of vehicles</mark></div>', unsafe_allow_html=True)
+    🚘Which makes have most number of vehicles🚘</mark></div>', unsafe_allow_html=True)
     n1 = st.number_input(f"Top Makes", 8, len(df1), step=1)
     st.plotly_chart(top_makes_dist(df1, n=n1), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
@@ -98,7 +98,7 @@ def top_models_dist(df, n, make):
 
 with col2:
     st.markdown(f'<h6 div style="text-align: center;color:#cc6600;font-weight:bold;font-family:verdana">\
-        🚔From each make who have most vehicles</mark></div>', unsafe_allow_html=True)
+        🚔From each make who have most vehicles🚔</mark></div>', unsafe_allow_html=True)
     c1, c2 = st.columns(2)
     with c1:
         make = st.selectbox("Vehicle Make", df2["make"].unique().tolist(), index=3)
@@ -149,7 +149,7 @@ def vehicle_type_prop(df, make):
     return fig
 with col3:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-            🚍Is My Body Type Highest in Proportion</mark></div>', unsafe_allow_html=True)
+            🚍Is My Body Type Highest in Proportion🚍</mark></div>', unsafe_allow_html=True)
     make = st.selectbox("Vehicle Make", df3["make"].unique().tolist())
     st.plotly_chart(vehicle_type_prop(df3, make), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
@@ -203,7 +203,7 @@ def vehicle_year_prop(df, make, model):
 
 with col4:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-                📅Does my model year dominated more</mark></div>', unsafe_allow_html=True)
+                📅Does my model year dominated more📅</mark></div>', unsafe_allow_html=True)
     c3, c4 = st.columns(2)
     with c3:
         make = st.selectbox("vehicle Make", df4['make'].unique().tolist())
@@ -257,7 +257,7 @@ def vehicles_by_dealers(n):
 col5, col6 = st.columns(2)
 with col5:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-                    🎢 As a delaer am I having more vehicles</mark></div>', unsafe_allow_html=True)
+                    🎢 As a delaer am I having more vehicles🎢</mark></div>', unsafe_allow_html=True)
     n = st.number_input("TOP DEALERS", 5, len(dealers_vehicles))
     st.plotly_chart(vehicles_by_dealers(n=n), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
@@ -301,7 +301,7 @@ def vehicle_dealers_prop(df, make, n):
     return fig
 with col6:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-                        🤝Is my model more in market</mark></div>', unsafe_allow_html=True)
+                        🤝Is my model more in market🤝</mark></div>', unsafe_allow_html=True)
     c3, c4 = st.columns(2)
     with c3:
         make = st.selectbox("Make", df5["make"].unique().tolist())
@@ -345,7 +345,7 @@ def price_distribution(df, make, model, year):
 
 with col7:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-                            💸Would you like to see my price range</mark></div>', unsafe_allow_html=True)
+                            💸Would you like to see my price range💸</mark></div>', unsafe_allow_html=True)
     c5, c6, c7 = st.columns(3)
     with c5:
         make = st.selectbox("Vehicle Brand", data["vehicle_make"].unique().tolist())
@@ -386,7 +386,7 @@ def mileage_vs_price(df, make, model, year):
     return fig
 with col8:
     st.markdown(f'<h6 div style="text-align: center;"><mark style = "background-color:#F3EBEC;color:#cc6600;font-weight:bold;font-family:verdana">\
-                                🛣️Does mileage really effecting vehicles price</mark></div>', unsafe_allow_html=True)
+                                🛣️Does mileage really effecting vehicles price🛣️</mark></div>', unsafe_allow_html=True)
     st.markdown("<div></div>", unsafe_allow_html=True)
     st.markdown("<div></div>", unsafe_allow_html=True)
     st.markdown("<div></div>", unsafe_allow_html=True)
