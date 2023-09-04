@@ -49,7 +49,7 @@ with col1:
     n1 = st.number_input(f"Top Makes", 8, len(df1), step=1)
     st.plotly_chart(top_makes_dist(df1, n=n1), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
-    We can see that Benz is having highest number of makes as per last month data and followed by Nissan, Toyota, Ford etc</mark></div>', unsafe_allow_html=True)
+    We can see that Benz brand contributing highest number of vehicles as per last month data and followed by Nissan, Toyota, Ford etc</mark></div>', unsafe_allow_html=True)
 
 makes = []
 models = []
@@ -107,7 +107,7 @@ with col2:
 
     st.plotly_chart(top_models_dist(df2, n=n2, make=make), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
-    When you change the makes, you will get distribution of each model from the respective make. For example, when you select Toyota, you can see that corolla and Rav4 have most\
+    When you change the makes, you will get distribution of each model from the respective make. For example, when you select Toyota, you can see that corolla and Rav4 contributes most\
     number of vehicles followed by Yaris, Camry etc. </mark></div>', unsafe_allow_html=True)
 
 st.divider()
@@ -356,7 +356,7 @@ with col7:
     st.plotly_chart(price_distribution(data, make, model, year), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
         From the above histogram plot, you can see the distribution of different models price distribution. Lets select Kia Optima 2020 model, you can see that\
-        price range would be between AED 20k - AED 80k. Please note price of vehicles depends on mileage as well as vehicle dealer. </mark></div>',unsafe_allow_html=True)
+        price range would be between AED 20k - AED 80k. Please note price of vehicles depend on mileage as well as vehicle dealer. </mark></div>',unsafe_allow_html=True)
 
 def mileage_vs_price(df, make, model, year):
     df_ = df.query(f'vehicle_make == "{make}" and vehicle_model =="{model}" and vehicle_year == {year}')
@@ -394,6 +394,6 @@ with col8:
     st.markdown("<div></div>", unsafe_allow_html=True)
     st.plotly_chart(mileage_vs_price(data, make, model, year), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
-        We expected inverse proportion of vehicles price with mileage, but it is not. Price of vehicles is depending vehicle dealer as well.\
-        We are not getting linear relationship between vehicle price and mileage. Therefore these features (mileage and dealer) would effect our \
-        machine learning model for price prediction.</mark></div>',unsafe_allow_html=True)
+        We expected inverse proportion of vehicles price with mileage, but it is not that we got in above plot. Price of vehicles is depending vehicle dealer as well.\
+        We are not getting linear relationship between vehicle price and mileage as we expected. Therefore these features (mileage and dealer) would effect our \
+        machine learning model while using for price prediction.</mark></div>',unsafe_allow_html=True)
