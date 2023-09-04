@@ -26,9 +26,9 @@ st.markdown('<h2 div style="text-align: center;"> <mark style = "background-colo
 st.markdown(f'<h6 div style="text-align: justify;">As I mentioned in introduction about data, I have extracted key features of vehicles which will somehow effect\
  the price of used cars in UAE market. I have extracted data from Dubicars website dated in August`2023 and used Decision Tree algorithm to predict the price of\
  vehicle since most of the feature are categorical type. However I haven`t used vehicle dealer as a feature, but it may effect the vehicles price prediction. Due to insufficient\
- samples from each dealer I forced to avoided dealer feature from the model. Therefore when you change the mileage, there will be a noise in the price for some\
- vehicles. As a preprocessing for categorical features I have been used LabelEncoder and MinMaxScaler to change the categorical features to numerical features.\
- For price prediction, you can change the below features and see the predicted price of vehicle in below highlighted in red. You can also see the model error below. </div>', unsafe_allow_html=True)
+ samples from each dealer, I forced to avoided dealer feature from the model. Therefore when you change the mileage, there will be a noise in the price for some of\
+ vehicles. As a preprocessing of data for categorical features, I have been used LabelEncoder and MinMaxScaler to change the categorical features to numerical features.\
+ For price prediction, you can change the below features and see the predicted price of vehicle in below highlighted. You can also see the model error below. </div>', unsafe_allow_html=True)
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
