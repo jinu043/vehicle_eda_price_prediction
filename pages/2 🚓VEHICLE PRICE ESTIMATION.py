@@ -24,11 +24,11 @@ df3 = get_data()
 
 st.markdown('<h2 div style="text-align: center;"> <mark style = "background-color:#F3EBEC;color:darkred;font-weight:bold">CURRENT MARKET PRICE ESTIMATION OF USED CARS IN UAE</mark> </div>', unsafe_allow_html=True)
 st.markdown(f'<h6 div style="text-align: justify;">As I mentioned in introduction about data, I have extracted key features of vehicle which will somehow effect\
- the price of used cars in UAE market. I have extracted data from Dubicars website dated in August`2023. I have used Decision Tree algorithm to predict the price of\
- vehicle since most of the feature are categorical type. However I haven`t used vehicle dealer as a feature, but it may effect the vehicle price. Due to insufficient\
- samples from each dealer I avoided dealer feature from the model. Therefore when you change the mileage, there will be a noise in the price for some\
- vehicles. As a preprocessing for categorical features I have been used LabelEncoder and MinMaxScaler to change the features to numerical data.\
- For price prediction, you can change the below features and see the price of vehicle in below. You can also see the model error as well in below. </div>', unsafe_allow_html=True)
+ the price of used cars in UAE market. I have extracted data from Dubicars website dated in August`2023 and used Decision Tree algorithm to predict the price of\
+ vehicle since most of the feature are categorical type. However I haven`t used vehicle dealer as a feature, but it may effect the vehicle price prediction. Due to insufficient\
+ samples from each dealers I forced to avoided dealer feature from the model. Therefore when you change the mileage, there will be a noise in the price for some\
+ vehicles. As a preprocessing for categorical features I have been used LabelEncoder and MinMaxScaler to change the categorical features to numerical features.\
+ For price prediction, you can change the below features and see the predicted price of vehicle in below highlighted in red. You can also see the model error below. </div>', unsafe_allow_html=True)
 
 col1, col2, col3, col4, col5 = st.columns(5)
 
