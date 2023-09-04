@@ -25,5 +25,5 @@ st.markdown(f'<h6 div style="text-align: justify;">The above table is just first
  {data.shape[0]} records have collected for analysis. There were about 9800 records had been collected during web scrapping and I have further\
   reduced data by selecting vehicle model years above and equal to 2017. I have also removed some of the models and makes which does not \
   have sufficient sample records for analysis. Selected features are vehicle make, vehicle model, vehicle wheel size, vehicle mileage \
-  vehicle body type, number of cylinders, model year, vehicle fuel type, vehicle specification. This above 9 features have used for machine leaning \
-  model. </div>', unsafe_allow_html=True)
+  vehicle body type, number of cylinders, model year, vehicle fuel type, vehicle specification. This above 9 features have been used for generating machine leaning \
+  model for price prediction. </div>', unsafe_allow_html=True)
