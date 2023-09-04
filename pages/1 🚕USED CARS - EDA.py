@@ -394,6 +394,6 @@ with col8:
     st.markdown("<div></div>", unsafe_allow_html=True)
     st.plotly_chart(mileage_vs_price(data, make, model, year), use_container_width=True)
     st.markdown(f'<h6 div style="text-align: justify;"><mark style = "background-color:#F3EBEC;color:#993366;font-weight:bold;font-family:verdana">\
-        We expected inverse proportion of vehicles price with mileage, but it is not that we got in above plot. Price of vehicles is depending vehicle dealer as well.\
+        We expected inverse proportion of vehicles price with mileage, but it is not that we got in above plot. Price of vehicles is depending on vehicle dealer feature as well.\
         We are not getting linear relationship between vehicle price and mileage as we expected. Therefore these features (mileage and dealer) would effect our \
         machine learning model while using for price prediction.</mark></div>',unsafe_allow_html=True)
